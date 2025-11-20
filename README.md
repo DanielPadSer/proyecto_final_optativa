@@ -48,7 +48,8 @@ Con estas herramientas se hicieron las pruebas, explotaciones y validación en e
 
 ## Level 1 – Unrestricted Menu Item Deletion
 El endpoint DELETE /menu/{item_id}, al no tener controles de autorización, permitía que cualquier usuario pudiera eliminar elementos del menú sin restricciones. Esto es un claro ejemplo de la vulnerabilidad clasificada como OWASP API5:2023 — Broken Function Level Authorization, que ocurre cuando no se aplican correctamente los controles de acceso en funciones específicas de la API. Esta falla compromete la integridad y disponibilidad de los datos al permitir que usuarios no autorizados realicen acciones sensibles, como borrar elementos críticos del sistema.
-<img width="795" height="564" alt="image" src="https://github.com/user-attachments/assets/43f6801f-024d-4996-95b8-74485133ed57" />
+<img width="720" height="296" alt="image" src="https://github.com/user-attachments/assets/2af7a090-c3a5-4b44-b3ce-2bc3f5c3ba81" />
+
 
 ### Código antiguo
 ```python
